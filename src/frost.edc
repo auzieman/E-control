@@ -1,0 +1,179 @@
+color_classes { color_class { name: "nav.0"; color: 203 221 232 0; }color_class { name: "nav.1"; color: 203 221 232 0; }color_class { name: "nav.2"; color: 203 221 232 0; }color_class { name: "nav.3"; color: 203 221 232 0; }color_class { name: "nav.4"; color: 203 221 232 0; }color_class { name: "nav.5"; color: 203 221 232 0; }color_class { name: "nav.6"; color: 203 221 232 0; }color_class { name: "nav.7"; color: 203 221 232 0; }color_class { name: "nav.8"; color: 203 221 232 0; }color_class { name: "nav.9"; color: 203 221 232 0; } color_class { name: "frost.surface"; color: 255 255 255 255; } color_class { name: "frost.sidebar"; color: 216 229 237 244; } } images { image: "rail.svg" COMP; image: "cap.svg" COMP; image: "panel.svg" COMP; } collections {
+group { name: "workstation/main"; min: 1000 680; parts {
+part { name: "body"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.003000 0.026471; rel2.relative: 0.997000 0.992647; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 18 18 18 18; } } }
+part { name: "sidebar"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.006000 0.072059; rel2.relative: 0.226000 0.983824; color: 255 255 255 255; color_class: "frost.sidebar"; } }
+part { name: "divider"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.226000 0.070588; rel2.relative: 0.227000 0.985294; color: 178 197 209 255;  } }
+part { name: "rail"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.004000 0.005882; rel2.relative: 0.996000 0.067647; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "rail.svg"; border: 24 24 18 18; } } }
+part { name: "cap"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.010000 0.008824; rel2.relative: 0.044000 0.055882; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "window.title"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.054000 0.014706; rel2.relative: 0.854000 0.055882; color: 38 58 73 255; text { text: "Workstation Settings"; font: "DejaVu Sans"; size: 14; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.drag"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.004000 0.005882; rel2.relative: 0.872000 0.067647; color: 0 0 0 0;  } }
+part { name: "cap.minimize"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.874000 0.011765; rel2.relative: 0.908000 0.058824; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "label.minimize"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.886000 0.019118; rel2.relative: 0.906000 0.054412; color: 38 58 73 255; text { text: "−"; font: "DejaVu Sans"; size: 15; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.minimize"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.874000 0.008824; rel2.relative: 0.911000 0.061765; color: 0 0 0 0;  } }
+part { name: "cap.maximize"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.913000 0.011765; rel2.relative: 0.947000 0.058824; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "label.maximize"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.925000 0.019118; rel2.relative: 0.945000 0.054412; color: 38 58 73 255; text { text: "□"; font: "DejaVu Sans"; size: 15; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.maximize"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.913000 0.008824; rel2.relative: 0.950000 0.061765; color: 0 0 0 0;  } }
+part { name: "cap.close"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.952000 0.011765; rel2.relative: 0.986000 0.058824; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "label.close"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.964000 0.019118; rel2.relative: 0.984000 0.054412; color: 38 58 73 255; text { text: "×"; font: "DejaVu Sans"; size: 15; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.close"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.952000 0.008824; rel2.relative: 0.989000 0.061765; color: 0 0 0 0;  } }
+part { name: "search.bg"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.018000 0.097059; rel2.relative: 0.212000 0.150000; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 12 12 12 12; } } }
+part { name: "search.entry"; type: SWALLOW; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.028000 0.105882; rel2.relative: 0.203000 0.141176; color: 255 255 255 255;  } }
+part { name: "sidebar.caption"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.023000 0.169118; rel2.relative: 0.213000 0.195588; color: 87 108 122 255; text { text: "YOUR WORKSTATION"; font: "DejaVu Sans"; size: 10; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "nav.bg.0"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.214706; rel2.relative: 0.219000 0.269118; color: 255 255 255 255; color_class: "nav.0"; } }
+part { name: "nav.0"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.217647; rel2.relative: 0.207000 0.264706; color: 38 58 73 255; text { text: "Appearance"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.0"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.214706; rel2.relative: 0.219000 0.269118; color: 0 0 0 0;  } }
+part { name: "nav.bg.1"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.277941; rel2.relative: 0.219000 0.332353; color: 255 255 255 255; color_class: "nav.1"; } }
+part { name: "nav.1"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.280882; rel2.relative: 0.207000 0.327941; color: 38 58 73 255; text { text: "Displays & Input"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.1"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.277941; rel2.relative: 0.219000 0.332353; color: 0 0 0 0;  } }
+part { name: "nav.bg.2"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.341176; rel2.relative: 0.219000 0.395588; color: 255 255 255 255; color_class: "nav.2"; } }
+part { name: "nav.2"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.344118; rel2.relative: 0.207000 0.391176; color: 38 58 73 255; text { text: "Audio"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.2"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.341176; rel2.relative: 0.219000 0.395588; color: 0 0 0 0;  } }
+part { name: "nav.bg.3"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.404412; rel2.relative: 0.219000 0.458824; color: 255 255 255 255; color_class: "nav.3"; } }
+part { name: "nav.3"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.407353; rel2.relative: 0.207000 0.454412; color: 38 58 73 255; text { text: "Network"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.3"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.404412; rel2.relative: 0.219000 0.458824; color: 0 0 0 0;  } }
+part { name: "nav.bg.4"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.467647; rel2.relative: 0.219000 0.522059; color: 255 255 255 255; color_class: "nav.4"; } }
+part { name: "nav.4"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.470588; rel2.relative: 0.207000 0.517647; color: 38 58 73 255; text { text: "Accounts & Security"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.4"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.467647; rel2.relative: 0.219000 0.522059; color: 0 0 0 0;  } }
+part { name: "nav.bg.5"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.530882; rel2.relative: 0.219000 0.585294; color: 255 255 255 255; color_class: "nav.5"; } }
+part { name: "nav.5"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.533824; rel2.relative: 0.207000 0.580882; color: 38 58 73 255; text { text: "Software & Updates"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.5"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.530882; rel2.relative: 0.219000 0.585294; color: 0 0 0 0;  } }
+part { name: "nav.bg.6"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.594118; rel2.relative: 0.219000 0.648529; color: 255 255 255 255; color_class: "nav.6"; } }
+part { name: "nav.6"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.597059; rel2.relative: 0.207000 0.644118; color: 38 58 73 255; text { text: "Storage & Devices"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.6"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.594118; rel2.relative: 0.219000 0.648529; color: 0 0 0 0;  } }
+part { name: "nav.bg.7"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.657353; rel2.relative: 0.219000 0.711765; color: 255 255 255 255; color_class: "nav.7"; } }
+part { name: "nav.7"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.660294; rel2.relative: 0.207000 0.707353; color: 38 58 73 255; text { text: "Printing"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.7"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.657353; rel2.relative: 0.219000 0.711765; color: 0 0 0 0;  } }
+part { name: "nav.bg.8"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.720588; rel2.relative: 0.219000 0.775000; color: 255 255 255 255; color_class: "nav.8"; } }
+part { name: "nav.8"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.723529; rel2.relative: 0.207000 0.770588; color: 38 58 73 255; text { text: "System"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.8"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.720588; rel2.relative: 0.219000 0.775000; color: 0 0 0 0;  } }
+part { name: "nav.bg.9"; type: RECT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014000 0.783824; rel2.relative: 0.219000 0.838235; color: 255 255 255 255; color_class: "nav.9"; } }
+part { name: "nav.9"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.032000 0.786765; rel2.relative: 0.207000 0.833824; color: 38 58 73 255; text { text: "Services"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.nav.9"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.014000 0.783824; rel2.relative: 0.219000 0.838235; color: 0 0 0 0;  } }
+part { name: "sidebar.footer"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.024000 0.889706; rel2.relative: 0.214000 0.919118; color: 87 108 122 255; text { text: "AlpinE / native EFL"; font: "DejaVu Sans"; size: 11; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "heading"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.258000 0.101471; rel2.relative: 0.938000 0.158824; color: 38 58 73 255; text { text: "Appearance"; font: "DejaVu Sans"; size: 26; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "description"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.259000 0.163235; rel2.relative: 0.954000 0.207353; color: 87 108 122 255; text { text: "Make this desktop yours."; font: "DejaVu Sans"; size: 13; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "summary.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; } description { state: "hidden" 0.0; inherit: "default" 0.0; visible: 0; } }
+part { name: "audio.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "audio.content"; type: SWALLOW; mouse_events: 1; clip_to: "audio.clip"; description { state: "default" 0.0; rel1.relative: 0.258000 0.226471; rel2.relative: 0.960000 0.807353; color: 255 255 255 255;  } }
+part { name: "display.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "display.content"; type: SWALLOW; mouse_events: 1; clip_to: "display.clip"; description { state: "default" 0.0; rel1.relative: 0.258000 0.226471; rel2.relative: 0.960000 0.807353; color: 255 255 255 255;  } }
+part { name: "accounts.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "accounts.content"; type: SWALLOW; mouse_events: 1; clip_to: "accounts.clip"; description { state: "default" 0.0; rel1.relative: 0.258000 0.226471; rel2.relative: 0.960000 0.807353; color: 255 255 255 255;  } }
+part { name: "network.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "network.content"; type: SWALLOW; mouse_events: 1; clip_to: "network.clip"; description { state: "default" 0.0; rel1.relative: 0.258000 0.226471; rel2.relative: 0.960000 0.807353; color: 255 255 255 255;  } }
+part { name: "card.0"; type: IMAGE; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.241176; rel2.relative: 0.971000 0.367647; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 14 14 14 14; } } }
+part { name: "row.title.0"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.255882; rel2.relative: 0.838000 0.294118; color: 38 58 73 255; text { text: ""; font: "DejaVu Sans"; size: 14; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.value.0"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.300000; rel2.relative: 0.913000 0.342647; color: 79 101 117 255; text { text: ""; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.arrow.0"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.935000 0.273529; rel2.relative: 0.957000 0.320588; color: 92 130 152 255; text { text: "›"; font: "DejaVu Sans"; size: 23; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.row.0"; type: RECT; mouse_events: 1; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.241176; rel2.relative: 0.971000 0.367647; color: 0 0 0 0;  } }
+part { name: "card.1"; type: IMAGE; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.385294; rel2.relative: 0.971000 0.511765; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 14 14 14 14; } } }
+part { name: "row.title.1"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.400000; rel2.relative: 0.838000 0.438235; color: 38 58 73 255; text { text: ""; font: "DejaVu Sans"; size: 14; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.value.1"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.444118; rel2.relative: 0.913000 0.486765; color: 79 101 117 255; text { text: ""; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.arrow.1"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.935000 0.417647; rel2.relative: 0.957000 0.464706; color: 92 130 152 255; text { text: "›"; font: "DejaVu Sans"; size: 23; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.row.1"; type: RECT; mouse_events: 1; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.385294; rel2.relative: 0.971000 0.511765; color: 0 0 0 0;  } }
+part { name: "card.2"; type: IMAGE; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.529412; rel2.relative: 0.971000 0.655882; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 14 14 14 14; } } }
+part { name: "row.title.2"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.544118; rel2.relative: 0.838000 0.582353; color: 38 58 73 255; text { text: ""; font: "DejaVu Sans"; size: 14; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.value.2"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.588235; rel2.relative: 0.913000 0.630882; color: 79 101 117 255; text { text: ""; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.arrow.2"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.935000 0.561765; rel2.relative: 0.957000 0.608824; color: 92 130 152 255; text { text: "›"; font: "DejaVu Sans"; size: 23; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.row.2"; type: RECT; mouse_events: 1; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.529412; rel2.relative: 0.971000 0.655882; color: 0 0 0 0;  } }
+part { name: "card.3"; type: IMAGE; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.673529; rel2.relative: 0.971000 0.800000; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 14 14 14 14; } } }
+part { name: "row.title.3"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.688235; rel2.relative: 0.838000 0.726471; color: 38 58 73 255; text { text: ""; font: "DejaVu Sans"; size: 14; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.value.3"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.273000 0.732353; rel2.relative: 0.913000 0.775000; color: 79 101 117 255; text { text: ""; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "row.arrow.3"; type: TEXT; mouse_events: 0; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.935000 0.705882; rel2.relative: 0.957000 0.752941; color: 92 130 152 255; text { text: "›"; font: "DejaVu Sans"; size: 23; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.row.3"; type: RECT; mouse_events: 1; clip_to: "summary.clip"; description { state: "default" 0.0; rel1.relative: 0.251000 0.673529; rel2.relative: 0.971000 0.800000; color: 0 0 0 0;  } }
+part { name: "status"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.260000 0.830882; rel2.relative: 0.945000 0.873529; color: 87 108 122 255; text { text: "Read-only preview"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "details.bg"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.260000 0.892647; rel2.relative: 0.430000 0.944118; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "rail.svg"; border: 20 20 16 16; } } }
+part { name: "details.text"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.279000 0.897059; rel2.relative: 0.429000 0.939706; color: 38 58 73 255; text { text: "View page details"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.details"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.260000 0.892647; rel2.relative: 0.430000 0.944118; color: 0 0 0 0;  } }
+} programs { program { signal: "page,audio"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; } program { signal: "page,audio"; source: "app"; action: STATE_SET "active" 0.0; target: "audio.clip"; } program { signal: "page,audio"; source: "app"; action: STATE_SET "default" 0.0; target: "display.clip"; } program { signal: "page,displays"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; } program { signal: "page,displays"; source: "app"; action: STATE_SET "default" 0.0; target: "audio.clip"; } program { signal: "page,displays"; source: "app"; action: STATE_SET "active" 0.0; target: "display.clip"; } program { signal: "page,summary"; source: "app"; action: STATE_SET "default" 0.0; target: "summary.clip"; target: "audio.clip"; target: "display.clip"; target: "accounts.clip"; } program { signal: "page,audio"; source: "app"; action: STATE_SET "default" 0.0; target: "accounts.clip"; } program { signal: "page,displays"; source: "app"; action: STATE_SET "default" 0.0; target: "accounts.clip"; } program { signal: "page,accounts"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; } program { signal: "page,accounts"; source: "app"; action: STATE_SET "default" 0.0; target: "audio.clip"; target: "display.clip"; } program { signal: "page,accounts"; source: "app"; action: STATE_SET "active" 0.0; target: "accounts.clip"; } program { signal: "page,audio"; source: "app"; action: STATE_SET "default" 0.0; target: "network.clip"; } program { signal: "page,displays"; source: "app"; action: STATE_SET "default" 0.0; target: "network.clip"; } program { signal: "page,accounts"; source: "app"; action: STATE_SET "default" 0.0; target: "network.clip"; } program { signal: "page,summary"; source: "app"; action: STATE_SET "default" 0.0; target: "network.clip"; } program { signal: "page,network"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; } program { signal: "page,network"; source: "app"; action: STATE_SET "default" 0.0; target: "audio.clip"; target: "display.clip"; target: "accounts.clip"; } program { signal: "page,network"; source: "app"; action: STATE_SET "active" 0.0; target: "network.clip"; } } }
+group { name: "workstation/details"; min: 680 440; parts {
+part { name: "body"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.004412 0.040909; rel2.relative: 0.995588 0.993182; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "panel.svg"; border: 18 18 18 18; } } }
+part { name: "rail"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.005882 0.009091; rel2.relative: 0.994118 0.104545; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "rail.svg"; border: 24 24 18 18; } } }
+part { name: "cap"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.014706 0.013636; rel2.relative: 0.064706 0.086364; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "window.title"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.079412 0.022727; rel2.relative: 0.785294 0.086364; color: 38 58 73 255; text { text: "Settings details"; font: "DejaVu Sans"; size: 14; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.drag"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.005882 0.009091; rel2.relative: 0.811765 0.104545; color: 0 0 0 0;  } }
+part { name: "cap.minimize"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.814706 0.018182; rel2.relative: 0.864706 0.090909; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "label.minimize"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.832353 0.029545; rel2.relative: 0.861765 0.084091; color: 38 58 73 255; text { text: "−"; font: "DejaVu Sans"; size: 15; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.minimize"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.814706 0.013636; rel2.relative: 0.869118 0.095455; color: 0 0 0 0;  } }
+part { name: "cap.maximize"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.872059 0.018182; rel2.relative: 0.922059 0.090909; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "label.maximize"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.889706 0.029545; rel2.relative: 0.919118 0.084091; color: 38 58 73 255; text { text: "□"; font: "DejaVu Sans"; size: 15; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.maximize"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.872059 0.013636; rel2.relative: 0.926471 0.095455; color: 0 0 0 0;  } }
+part { name: "cap.close"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.929412 0.018182; rel2.relative: 0.979412 0.090909; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "cap.svg";  } } }
+part { name: "label.close"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.947059 0.029545; rel2.relative: 0.976471 0.084091; color: 38 58 73 255; text { text: "×"; font: "DejaVu Sans"; size: 15; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.close"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.929412 0.013636; rel2.relative: 0.983824 0.095455; color: 0 0 0 0;  } }
+part { name: "title"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.035294 0.150000; rel2.relative: 0.955882 0.220455; color: 38 58 73 255; text { text: ""; font: "DejaVu Sans"; size: 21; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "content"; type: SWALLOW; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.036765 0.256818; rel2.relative: 0.960294 0.861364; color: 255 255 255 255;  } }
+part { name: "done.bg"; type: IMAGE; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.786765 0.888636; rel2.relative: 0.951471 0.965909; color: 255 255 255 255; color_class: "frost.surface"; image { normal: "rail.svg"; border: 20 20 14 14; } } }
+part { name: "done.text"; type: TEXT; mouse_events: 0;  description { state: "default" 0.0; rel1.relative: 0.833824 0.897727; rel2.relative: 0.936765 0.954545; color: 38 58 73 255; text { text: "Done"; font: "DejaVu Sans"; size: 12; align: 0.0 0.5; ellipsis: 0.0; } } }
+part { name: "event.done"; type: RECT; mouse_events: 1;  description { state: "default" 0.0; rel1.relative: 0.786765 0.888636; rel2.relative: 0.951471 0.965909; color: 0 0 0 0;  } }
+} }
+group { name: "elm/button/base/frost-action"; min: 100 34;
+ script { new disabled; }
+ parts {
+  part { name: "plate"; type: IMAGE; mouse_events: 0;
+   description { state: "default" 0.0; image { normal: "rail.svg"; border: 20 20 16 16; } }
+   description { state: "pressed" 0.0; inherit: "default" 0.0; color: 190 216 232 255; }
+  }
+  part { name: "elm.text"; type: TEXT; mouse_events: 0;
+   description { state: "default" 0.0; rel1.offset: 19 3; rel2.offset: -20 -4; color: 38 58 73 255;
+    text { font: "DejaVu Sans"; size: 12; min: 1 1; align: 0.5 0.5; } }
+  }
+  part { name: "focus"; type: RECT; mouse_events: 0;
+   description { state: "default" 0.0; rel1.relative: 0.15 0.86; rel2.relative: 0.85 0.9; color: 74 137 177 0; }
+   description { state: "focused" 0.0; inherit: "default" 0.0; color: 74 137 177 255; }
+  }
+  part { name: "disabled"; type: RECT; mouse_events: 0;
+   description { state: "default" 0.0; color: 224 233 239 0; }
+   description { state: "disabled" 0.0; inherit: "default" 0.0; color: 224 233 239 150; }
+  }
+  part { name: "hit"; type: RECT; mouse_events: 1; description { state: "default" 0.0; color: 0 0 0 0; } }
+ }
+ programs {
+  program { signal: "mouse,down,1"; source: "hit"; script { if (!disabled) { set_state(PART:"plate", "pressed", 0.0); emit("elm,action,press", ""); } } }
+  program { signal: "mouse,up,1"; source: "hit"; script { set_state(PART:"plate", "default", 0.0); if (!disabled) emit("elm,action,unpress", ""); } }
+  program { signal: "mouse,clicked,1"; source: "hit"; script { if (!disabled) emit("elm,action,click", ""); } }
+  program { signal: "elm,state,disabled"; source: "elm"; script { disabled = 1; set_state(PART:"disabled", "disabled", 0.0); set_state(PART:"plate", "default", 0.0); } }
+  program { signal: "elm,state,enabled"; source: "elm"; script { disabled = 0; set_state(PART:"disabled", "default", 0.0); } }
+  program { signal: "elm,action,focus"; source: "elm"; action: STATE_SET "focused" 0.0; target: "focus"; }
+  program { signal: "elm,action,unfocus"; source: "elm"; action: STATE_SET "default" 0.0; target: "focus"; }
+ }
+}
+group { name: "workstation/system-content"; min: 650 395; parts {
+part { name: "summary.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 1; } description { state: "hidden" 0.0; inherit: "default" 0.0; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "summary.content"; type: SWALLOW; clip_to: "summary.clip"; description { state: "default" 0.0; } }
+part { name: "audio.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "hidden" 0.0; inherit: "default" 0.0; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "audio.content"; type: SWALLOW; clip_to: "audio.clip"; description { state: "default" 0.0; } }
+part { name: "display.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "hidden" 0.0; inherit: "default" 0.0; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "display.content"; type: SWALLOW; clip_to: "display.clip"; description { state: "default" 0.0; } }
+part { name: "accounts.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "hidden" 0.0; inherit: "default" 0.0; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "accounts.content"; type: SWALLOW; clip_to: "accounts.clip"; description { state: "default" 0.0; } }
+part { name: "network.clip"; type: RECT; mouse_events: 0; description { state: "default" 0.0; color: 255 255 255 255; visible: 0; } description { state: "hidden" 0.0; inherit: "default" 0.0; visible: 0; } description { state: "active" 0.0; inherit: "default" 0.0; visible: 1; } }
+part { name: "network.content"; type: SWALLOW; clip_to: "network.clip"; description { state: "default" 0.0; } }
+} programs {
+program { signal: "page,summary"; source: "app"; action: STATE_SET "active" 0.0; target: "summary.clip"; }
+program { signal: "page,summary"; source: "app"; action: STATE_SET "hidden" 0.0; target: "audio.clip"; }
+program { signal: "page,summary"; source: "app"; action: STATE_SET "hidden" 0.0; target: "display.clip"; }
+program { signal: "page,summary"; source: "app"; action: STATE_SET "hidden" 0.0; target: "accounts.clip"; }
+program { signal: "page,summary"; source: "app"; action: STATE_SET "hidden" 0.0; target: "network.clip"; }
+program { signal: "page,audio"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; }
+program { signal: "page,audio"; source: "app"; action: STATE_SET "active" 0.0; target: "audio.clip"; }
+program { signal: "page,audio"; source: "app"; action: STATE_SET "hidden" 0.0; target: "display.clip"; }
+program { signal: "page,audio"; source: "app"; action: STATE_SET "hidden" 0.0; target: "accounts.clip"; }
+program { signal: "page,audio"; source: "app"; action: STATE_SET "hidden" 0.0; target: "network.clip"; }
+program { signal: "page,displays"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; }
+program { signal: "page,displays"; source: "app"; action: STATE_SET "hidden" 0.0; target: "audio.clip"; }
+program { signal: "page,displays"; source: "app"; action: STATE_SET "active" 0.0; target: "display.clip"; }
+program { signal: "page,displays"; source: "app"; action: STATE_SET "hidden" 0.0; target: "accounts.clip"; }
+program { signal: "page,displays"; source: "app"; action: STATE_SET "hidden" 0.0; target: "network.clip"; }
+program { signal: "page,accounts"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; }
+program { signal: "page,accounts"; source: "app"; action: STATE_SET "hidden" 0.0; target: "audio.clip"; }
+program { signal: "page,accounts"; source: "app"; action: STATE_SET "hidden" 0.0; target: "display.clip"; }
+program { signal: "page,accounts"; source: "app"; action: STATE_SET "active" 0.0; target: "accounts.clip"; }
+program { signal: "page,accounts"; source: "app"; action: STATE_SET "hidden" 0.0; target: "network.clip"; }
+program { signal: "page,network"; source: "app"; action: STATE_SET "hidden" 0.0; target: "summary.clip"; }
+program { signal: "page,network"; source: "app"; action: STATE_SET "hidden" 0.0; target: "audio.clip"; }
+program { signal: "page,network"; source: "app"; action: STATE_SET "hidden" 0.0; target: "display.clip"; }
+program { signal: "page,network"; source: "app"; action: STATE_SET "hidden" 0.0; target: "accounts.clip"; }
+program { signal: "page,network"; source: "app"; action: STATE_SET "active" 0.0; target: "network.clip"; }
+} }
+}

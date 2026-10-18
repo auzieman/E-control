@@ -1,0 +1,13 @@
+{
+  "author": "Auzieman / AuzieTek",
+  "license": "CC-BY-SA-4.0",
+  "method": "Original code-native SVG glass plates and truncated-triangle caps; not raster extractions from the AI concept.",
+  "reference": "docs/images/frosted-glass-concept-v1.png",
+  "files": {
+    "rail.svg": "62ea546f8f4f5e741decae80b16e93bd71bbc3f886068d91c7216ef35e120b44",
+    "panel.svg": "8fece659ddbd1974b1077320c54bca42a3a9d02a8808bc0d3ba5bc09dc81aca3",
+    "cap.svg": "5a6d1a45d5a847ad9c19907bd8561bbe1f9c03a6a510031049425471748697f4"
+  },
+  "source_project": "BlackKnight-E-Theme",
+  "source_path": "themes/frosted-glass/assets"
+}

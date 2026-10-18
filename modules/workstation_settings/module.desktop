@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Link
+Name=Workstation Settings Bridge
+Comment=Open native Enlightenment settings from the workstation panel
+Icon=preferences-system
+X-Enlightenment-ModuleType=settings

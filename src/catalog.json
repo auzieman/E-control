@@ -1,0 +1,706 @@
+[
+  {
+    "id": "appearance",
+    "title": "Appearance",
+    "description": "Make this desktop yours.",
+    "keywords": "theme wallpaper shelf window focus borders appearance Menu Settings Shelves Wallpaper Theme Application Theme Palette Fonts Borders Transitions Scaling Window Display Window Focus Window Geometry Window List Menu Window Process Management Window Remembers Convertible Gadgets Notification Pager Tiling Window Switcher",
+    "rows": [
+      "Theme and wallpaper",
+      "Window behaviour",
+      "Shelves and menus",
+      "Fonts and colour"
+    ],
+    "entries": [
+      {
+        "path": "menus/menu_settings",
+        "priority": 30,
+        "label": "Menu Settings",
+        "module": "conf_menus",
+        "source": "src/modules/conf_menus/e_mod_main.c",
+        "sha256": "3e07cfcdfc05c48868b860382dca952ddbe227dd659d1040347af1d8465dc9e5",
+        "installed": true
+      },
+      {
+        "path": "extensions/shelves",
+        "priority": 20,
+        "label": "Shelves",
+        "module": "conf_shelves",
+        "source": "src/modules/conf_shelves/e_mod_main.c",
+        "sha256": "e54f613580c258013ad28d45bebee5bb1b89da1ade89ca4a30ddfee634c69eba",
+        "installed": true
+      },
+      {
+        "path": "appearance/wallpaper",
+        "priority": 10,
+        "label": "Wallpaper",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/theme",
+        "priority": 20,
+        "label": "Theme",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/xsettings",
+        "priority": 20,
+        "label": "Application Theme",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/colors",
+        "priority": 30,
+        "label": "Palette",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/fonts",
+        "priority": 40,
+        "label": "Fonts",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/borders",
+        "priority": 50,
+        "label": "Borders",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/transitions",
+        "priority": 60,
+        "label": "Transitions",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "appearance/scale",
+        "priority": 70,
+        "label": "Scaling",
+        "module": "conf_theme",
+        "source": "src/modules/conf_theme/e_mod_main.c",
+        "sha256": "4dcf6a084a9fa5b026bd684d3b29976e288c5e67ad0c2eef9ca4140ac542d6da",
+        "installed": true
+      },
+      {
+        "path": "windows/window_display",
+        "priority": 10,
+        "label": "Window Display",
+        "module": "conf_window_manipulation",
+        "source": "src/modules/conf_window_manipulation/e_mod_main.c",
+        "sha256": "a563896085c2a79cfece4c879863700e45d47125368bec1d2d471aa6fafb3af1",
+        "installed": true
+      },
+      {
+        "path": "windows/window_focus",
+        "priority": 20,
+        "label": "Window Focus",
+        "module": "conf_window_manipulation",
+        "source": "src/modules/conf_window_manipulation/e_mod_main.c",
+        "sha256": "a563896085c2a79cfece4c879863700e45d47125368bec1d2d471aa6fafb3af1",
+        "installed": true
+      },
+      {
+        "path": "windows/window_geometry",
+        "priority": 30,
+        "label": "Window Geometry",
+        "module": "conf_window_manipulation",
+        "source": "src/modules/conf_window_manipulation/e_mod_main.c",
+        "sha256": "a563896085c2a79cfece4c879863700e45d47125368bec1d2d471aa6fafb3af1",
+        "installed": true
+      },
+      {
+        "path": "windows/window_list_menu",
+        "priority": 40,
+        "label": "Window List Menu",
+        "module": "conf_window_manipulation",
+        "source": "src/modules/conf_window_manipulation/e_mod_main.c",
+        "sha256": "a563896085c2a79cfece4c879863700e45d47125368bec1d2d471aa6fafb3af1",
+        "installed": true
+      },
+      {
+        "path": "windows/window_process",
+        "priority": 50,
+        "label": "Window Process Management",
+        "module": "conf_window_manipulation",
+        "source": "src/modules/conf_window_manipulation/e_mod_main.c",
+        "sha256": "a563896085c2a79cfece4c879863700e45d47125368bec1d2d471aa6fafb3af1",
+        "installed": true
+      },
+      {
+        "path": "windows/window_remembers",
+        "priority": 40,
+        "label": "Window Remembers",
+        "module": "conf_window_remembers",
+        "source": "src/modules/conf_window_remembers/e_mod_main.c",
+        "sha256": "47274582fac88564edc73fab362e448ef88427ed2750348d20f54e4b6e08febc",
+        "installed": true
+      },
+      {
+        "path": "extensions/convertible",
+        "priority": 30,
+        "label": "Convertible",
+        "module": "convertible",
+        "source": "src/modules/convertible/e_mod_main.c",
+        "sha256": "c19d3ce636249ac5f8726fc8b98a6aff47d4ad8bb2b02c7dbe285c8df270dbfe",
+        "installed": true
+      },
+      {
+        "path": "extensions/gadman",
+        "priority": 150,
+        "label": "Gadgets",
+        "module": "gadman",
+        "source": "src/modules/gadman/e_mod_main.c",
+        "sha256": "cef6d3fd54d38deb57cf728f9986b10e71a823b3757aeaf02f0b1bb84a3f063d",
+        "installed": true
+      },
+      {
+        "path": "extensions/notification",
+        "priority": 30,
+        "label": "Notification",
+        "module": "notification",
+        "source": "src/modules/notification/e_mod_main.c",
+        "sha256": "69375de34a21158da599c65181caf1477ef11f8952d3db58b2efa6fb85c0b546",
+        "installed": true
+      },
+      {
+        "path": "extensions/pager",
+        "priority": 40,
+        "label": "Pager",
+        "module": "pager",
+        "source": "src/modules/pager/e_mod_main.c",
+        "sha256": "a4f98701cd4c078414b38e85a1bb6698b326bb5fa5bbd150c78b2334ed09e7f2",
+        "installed": true
+      },
+      {
+        "path": "windows/tiling",
+        "priority": 150,
+        "label": "Tiling",
+        "module": "tiling",
+        "source": "src/modules/tiling/e_mod_tiling.c",
+        "sha256": "fc4c2a82e418a57cd95aab7012f30587ac41e778baa8f6b6ef1d5d1de1ec8434",
+        "installed": true
+      },
+      {
+        "path": "windows/window_list",
+        "priority": 70,
+        "label": "Window Switcher",
+        "module": "winlist",
+        "source": "src/modules/winlist/e_mod_main.c",
+        "sha256": "9fd9d005987486e80b345138056d578c1b281f8af95300ef5e86eb60541064d8",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "display",
+    "title": "Displays & Input",
+    "description": "Make screens and controls comfortable to use.",
+    "keywords": "monitor resolution text size scale keyboard mouse touchpad shortcuts Key Bindings Mouse Bindings ACPI Bindings Edge Bindings Swipe Bindings Virtual Desktops Touch Mouse Language Settings Desklock Language Settings Input Method Settings Screen Setup Keyboard",
+    "rows": [
+      "Connected displays",
+      "Text size and scaling",
+      "Keyboard and shortcuts",
+      "Mouse and touchpad"
+    ],
+    "entries": [
+      {
+        "path": "keyboard_and_mouse/key_bindings",
+        "priority": 10,
+        "label": "Key Bindings",
+        "module": "conf_bindings",
+        "source": "src/modules/conf_bindings/e_mod_main.c",
+        "sha256": "136d064ae7747e1af0947f4c711a0c745f0cadc8f72876b74f2e3a1dbd6e8c8c",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/mouse_bindings",
+        "priority": 20,
+        "label": "Mouse Bindings",
+        "module": "conf_bindings",
+        "source": "src/modules/conf_bindings/e_mod_main.c",
+        "sha256": "136d064ae7747e1af0947f4c711a0c745f0cadc8f72876b74f2e3a1dbd6e8c8c",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/acpi_bindings",
+        "priority": 30,
+        "label": "ACPI Bindings",
+        "module": "conf_bindings",
+        "source": "src/modules/conf_bindings/e_mod_main.c",
+        "sha256": "136d064ae7747e1af0947f4c711a0c745f0cadc8f72876b74f2e3a1dbd6e8c8c",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/edge_bindings",
+        "priority": 10,
+        "label": "Edge Bindings",
+        "module": "conf_bindings",
+        "source": "src/modules/conf_bindings/e_mod_main.c",
+        "sha256": "136d064ae7747e1af0947f4c711a0c745f0cadc8f72876b74f2e3a1dbd6e8c8c",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/swipe_bindings",
+        "priority": 10,
+        "label": "Swipe Bindings",
+        "module": "conf_bindings",
+        "source": "src/modules/conf_bindings/e_mod_main.c",
+        "sha256": "136d064ae7747e1af0947f4c711a0c745f0cadc8f72876b74f2e3a1dbd6e8c8c",
+        "installed": true
+      },
+      {
+        "path": "screen/virtual_desktops",
+        "priority": 10,
+        "label": "Virtual Desktops",
+        "module": "conf_display",
+        "source": "src/modules/conf_display/e_mod_main.c",
+        "sha256": "05daa05d1c63f62739506036bc449682b90361b6ec5f05528b1570c4c539c362",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/interaction",
+        "priority": 40,
+        "label": "Touch",
+        "module": "conf_interaction",
+        "source": "src/modules/conf_interaction/e_mod_main.c",
+        "sha256": "e1e9e8c8fb7780c307cb5780fb5258dcbd92e237be206c0f812391733fd1cf39",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/mouse_settings",
+        "priority": 50,
+        "label": "Mouse",
+        "module": "conf_interaction",
+        "source": "src/modules/conf_interaction/e_mod_main.c",
+        "sha256": "e1e9e8c8fb7780c307cb5780fb5258dcbd92e237be206c0f812391733fd1cf39",
+        "installed": true
+      },
+      {
+        "path": "language/language_settings",
+        "priority": 10,
+        "label": "Language Settings",
+        "module": "conf_intl",
+        "source": "src/modules/conf_intl/e_mod_main.c",
+        "sha256": "7c3ec8d7eade686d5f2b8eb6e076bc73ac81c7c077e53e1d6b68a533cc9cec0c",
+        "installed": true
+      },
+      {
+        "path": "language/desklock_language_settings",
+        "priority": 10,
+        "label": "Desklock Language Settings",
+        "module": "conf_intl",
+        "source": "src/modules/conf_intl/e_mod_main.c",
+        "sha256": "7c3ec8d7eade686d5f2b8eb6e076bc73ac81c7c077e53e1d6b68a533cc9cec0c",
+        "installed": true
+      },
+      {
+        "path": "language/input_method_settings",
+        "priority": 20,
+        "label": "Input Method Settings",
+        "module": "conf_intl",
+        "source": "src/modules/conf_intl/e_mod_main.c",
+        "sha256": "7c3ec8d7eade686d5f2b8eb6e076bc73ac81c7c077e53e1d6b68a533cc9cec0c",
+        "installed": true
+      },
+      {
+        "path": "screen/screen_setup",
+        "priority": 20,
+        "label": "Screen Setup",
+        "module": "conf_randr",
+        "source": "src/modules/conf_randr/e_mod_main.c",
+        "sha256": "381877d327493f89f7a07b8adff0c9c9327c0e0bfc72cf1910193d7b16317d6b",
+        "installed": true
+      },
+      {
+        "path": "keyboard_and_mouse/xkbswitch",
+        "priority": 110,
+        "label": "Keyboard",
+        "module": "xkbswitch",
+        "source": "src/modules/xkbswitch/e_mod_main.c",
+        "sha256": "054b86f4be65fa0fa33eeb248f973cf77a537757f770a3f91c1ec3432a4a0024",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "audio",
+    "title": "Audio",
+    "description": "Choose where sound plays and how you are heard.",
+    "keywords": "sound volume speakers microphone headphones balance mixer Mixer",
+    "rows": [
+      "Sound output",
+      "Microphone",
+      "Application volumes",
+      "Device routing"
+    ],
+    "entries": [
+      {
+        "path": "extensions/emix",
+        "priority": 30,
+        "label": "Mixer",
+        "module": "mixer",
+        "source": "src/modules/mixer/e_mod_main.c",
+        "sha256": "9f484d6b5c3c33ab38c46562e34854d7ff5c2f2dbdcab19abfccc9a474778a46",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "network",
+    "title": "Network",
+    "description": "Connections, wireless devices and sharing.",
+    "keywords": "wifi wi-fi internet ethernet bluetooth vpn connection Connection Manager",
+    "rows": [
+      "Connection status",
+      "Wi-Fi and Ethernet",
+      "Bluetooth",
+      "VPN and sharing"
+    ],
+    "entries": [
+      {
+        "path": "extensions/connman",
+        "priority": 110,
+        "label": "Connection Manager",
+        "module": "connman",
+        "source": "src/modules/connman/e_mod_main.c",
+        "sha256": "032cd4493f134171e9fd127afd797fe44ccf6e2436be759105d49cb171be68d0",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "accounts",
+    "title": "Accounts & Security",
+    "description": "Your account, authentication and privacy.",
+    "keywords": "users password lock security authentication Screen Lock Applications Screen Unlock Applications Screen Lock",
+    "rows": [
+      "Current account",
+      "Screen locking",
+      "Authentication",
+      "Privacy"
+    ],
+    "entries": [
+      {
+        "path": "applications/screen_lock_applications",
+        "priority": 45,
+        "label": "Screen Lock Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "applications/screen_unlock_applications",
+        "priority": 46,
+        "label": "Screen Unlock Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "screen/screen_lock",
+        "priority": 30,
+        "label": "Screen Lock",
+        "module": "conf_display",
+        "source": "src/modules/conf_display/e_mod_main.c",
+        "sha256": "05daa05d1c63f62739506036bc449682b90361b6ec5f05528b1570c4c539c362",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "software",
+    "title": "Software & Updates",
+    "description": "Keep workstation software in order.",
+    "keywords": "install packages apk flatpak updates repositories enaptic Personal Application Launchers Favorite Applications Launcher Applications Default Applications Desktop Environments",
+    "rows": [
+      "Package management",
+      "Updates",
+      "Repositories",
+      "Default applications"
+    ],
+    "entries": [
+      {
+        "path": "applications/personal_applications",
+        "priority": 20,
+        "label": "Personal Application Launchers",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "applications/favorite_applications",
+        "priority": 30,
+        "label": "Favorite Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "applications/ibar_applications",
+        "priority": 40,
+        "label": "Launcher Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "applications/default_applications",
+        "priority": 70,
+        "label": "Default Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "applications/desktop_environments",
+        "priority": 80,
+        "label": "Desktop Environments",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "storage",
+    "title": "Storage & Devices",
+    "description": "Disks, removable media and connected hardware.",
+    "keywords": "disk mount usb drive storage devices removable ",
+    "rows": [
+      "Local disks",
+      "Mounts and removable media",
+      "Connected devices",
+      "Advanced storage"
+    ],
+    "entries": []
+  },
+  {
+    "id": "printing",
+    "title": "Printing",
+    "description": "Printers and jobs, in a native interface.",
+    "keywords": "printer cups print queue paper ink jobs scanner ",
+    "rows": [
+      "Print service and printers",
+      "Current jobs",
+      "Printer setup and defaults",
+      "Paper and device options"
+    ],
+    "entries": []
+  },
+  {
+    "id": "system",
+    "title": "System",
+    "description": "Power, time and workstation information.",
+    "keywords": "power battery backlight sleep time date startup system Battery Meter Configuration Panel Restart Applications Startup Applications Signal Bindings Dialogs Profiles Blanking Backlight Search Directories Environment Variables Performance Power Management CPU Frequency File Manager File Icons Quickaccess System Controls",
+    "rows": [
+      "Host information",
+      "Power and sleep",
+      "Date and time",
+      "Startup applications"
+    ],
+    "entries": [
+      {
+        "path": "advanced/battery",
+        "priority": 100,
+        "label": "Battery Meter",
+        "module": "battery",
+        "source": "src/modules/battery/e_mod_main.c",
+        "sha256": "613ccbc085859d0ab343d9d473e3ffd45549771cd3c7afe9e71ef87d7dd56d44",
+        "installed": true
+      },
+      {
+        "path": "advanced/conf",
+        "priority": 110,
+        "label": "Configuration Panel",
+        "module": "conf",
+        "source": "src/modules/conf/e_mod_main.c",
+        "sha256": "29e2e8e5e5d92a2f2cfaeaaef7f980170903b39a886753f0d72d546d8bf0e72c",
+        "installed": true
+      },
+      {
+        "path": "applications/restart_applications",
+        "priority": 50,
+        "label": "Restart Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "applications/startup_applications",
+        "priority": 60,
+        "label": "Startup Applications",
+        "module": "conf_applications",
+        "source": "src/modules/conf_applications/e_mod_main.c",
+        "sha256": "0f6f0c60989c3d03d72c2d0d4d6b7efd1f1292135e0f2702bb780e2380910b3b",
+        "installed": true
+      },
+      {
+        "path": "advanced/signal_bindings",
+        "priority": 10,
+        "label": "Signal Bindings",
+        "module": "conf_bindings",
+        "source": "src/modules/conf_bindings/e_mod_main.c",
+        "sha256": "136d064ae7747e1af0947f4c711a0c745f0cadc8f72876b74f2e3a1dbd6e8c8c",
+        "installed": true
+      },
+      {
+        "path": "settings/dialogs",
+        "priority": 10,
+        "label": "Dialogs",
+        "module": "conf_dialogs",
+        "source": "src/modules/conf_dialogs/e_mod_main.c",
+        "sha256": "4f344b972ad8266723520784718fe1afb0cb025eaed3270c91bc365fa914d9eb",
+        "installed": true
+      },
+      {
+        "path": "settings/profiles",
+        "priority": 50,
+        "label": "Profiles",
+        "module": "conf_dialogs",
+        "source": "src/modules/conf_dialogs/e_mod_main.c",
+        "sha256": "4f344b972ad8266723520784718fe1afb0cb025eaed3270c91bc365fa914d9eb",
+        "installed": true
+      },
+      {
+        "path": "screen/screen_saver",
+        "priority": 40,
+        "label": "Blanking",
+        "module": "conf_display",
+        "source": "src/modules/conf_display/e_mod_main.c",
+        "sha256": "05daa05d1c63f62739506036bc449682b90361b6ec5f05528b1570c4c539c362",
+        "installed": true
+      },
+      {
+        "path": "screen/power_management",
+        "priority": 50,
+        "label": "Backlight",
+        "module": "conf_display",
+        "source": "src/modules/conf_display/e_mod_main.c",
+        "sha256": "05daa05d1c63f62739506036bc449682b90361b6ec5f05528b1570c4c539c362",
+        "installed": true
+      },
+      {
+        "path": "advanced/search_directories",
+        "priority": 50,
+        "label": "Search Directories",
+        "module": "conf_paths",
+        "source": "src/modules/conf_paths/e_mod_main.c",
+        "sha256": "5a9e15544bd9a6f873ff0d9a02946c2f385a1a7cd966dab6a90016bcdd1264bf",
+        "installed": true
+      },
+      {
+        "path": "advanced/environment_variables",
+        "priority": 120,
+        "label": "Environment Variables",
+        "module": "conf_paths",
+        "source": "src/modules/conf_paths/e_mod_main.c",
+        "sha256": "5a9e15544bd9a6f873ff0d9a02946c2f385a1a7cd966dab6a90016bcdd1264bf",
+        "installed": true
+      },
+      {
+        "path": "advanced/performance",
+        "priority": 20,
+        "label": "Performance",
+        "module": "conf_performance",
+        "source": "src/modules/conf_performance/e_mod_main.c",
+        "sha256": "7c72636bb68ba2d1095d72f31be521b0ebddbbec6d930078df3f236005dc94c7",
+        "installed": true
+      },
+      {
+        "path": "advanced/powermanagement",
+        "priority": 50,
+        "label": "Power Management",
+        "module": "conf_performance",
+        "source": "src/modules/conf_performance/e_mod_main.c",
+        "sha256": "7c72636bb68ba2d1095d72f31be521b0ebddbbec6d930078df3f236005dc94c7",
+        "installed": true
+      },
+      {
+        "path": "advanced/cpufreq",
+        "priority": 120,
+        "label": "CPU Frequency",
+        "module": "cpufreq",
+        "source": "src/modules/cpufreq/e_mod_main.c",
+        "sha256": "86c462229ace862db0d2aa7d80e25bccbd9149987ebee10bccca2fddec45bbb1",
+        "installed": true
+      },
+      {
+        "path": "fileman/fileman",
+        "priority": 10,
+        "label": "File Manager",
+        "module": "fileman",
+        "source": "src/modules/fileman/e_mod_main.c",
+        "sha256": "121d4d575967e1e1da0134771c5a19079d9a26edb987f1d6e0985de48516d892",
+        "installed": true
+      },
+      {
+        "path": "fileman/file_icons",
+        "priority": 20,
+        "label": "File Icons",
+        "module": "fileman",
+        "source": "src/modules/fileman/e_mod_main.c",
+        "sha256": "121d4d575967e1e1da0134771c5a19079d9a26edb987f1d6e0985de48516d892",
+        "installed": true
+      },
+      {
+        "path": "launcher/quickaccess",
+        "priority": 1,
+        "label": "Quickaccess",
+        "module": "quickaccess",
+        "source": "src/modules/quickaccess/e_mod_main.c",
+        "sha256": "f8b972958221aa72aebde7144ab1fe6ed2a994e9e39b66a3a86b9c3ae63f54c5",
+        "installed": true
+      },
+      {
+        "path": "advanced/syscon",
+        "priority": 10,
+        "label": "System Controls",
+        "module": "syscon",
+        "source": "src/modules/syscon/e_mod_main.c",
+        "sha256": "3822b8f9cd983bec494745120f1597bb36a2bfeece6aec8276e0880126405dbc",
+        "installed": true
+      }
+    ]
+  },
+  {
+    "id": "services",
+    "title": "Services",
+    "description": "See what the workstation is running.",
+    "keywords": "daemon openrc services logs startup ",
+    "rows": [
+      "Service status",
+      "Start at boot",
+      "Service actions",
+      "Logs and diagnostics"
+    ],
+    "entries": []
+  }
+]
