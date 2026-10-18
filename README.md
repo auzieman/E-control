@@ -10,6 +10,8 @@ have provider integrations. Storage shows usage and volumes, with file browsing
 and a GParted handoff. Some advanced settings still open Enlightenment dialogs;
 printing supports basic CUPS workflows, with advanced setup handed off.
 
+![Alt Text](docs/images/shot-2026-10-18_06-58-19.jpg)
+
 ## What you can do
 
 | Section | Controls and backend |
