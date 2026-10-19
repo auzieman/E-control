@@ -138,3 +138,17 @@ Remove passwords, access tokens and personal network/account details from logs.
 - [AlpinEifyd](https://github.com/auzieman/AlpinEifyd)
 - [E-Jamz](https://github.com/auzieman/E-Jamz)
 - [BlackKnight E Theme](https://github.com/auzieman/BlackKnight-E-Theme)
+
+## Alpine package
+
+The signed AlpinE companion feed provides `e-control 0.1.0-r0` for Alpine 3.24
+x86_64. Follow the [repository and signing-key setup](https://github.com/auzieman/AlpinEifyd/blob/main/docs/companion-apks.md), then run:
+
+```sh
+sudo apk update
+sudo apk add e-control
+```
+
+The package includes the installed launcher and scoped authentication helper;
+manual helper installation is unnecessary with the APK. Backend services still
+need to be configured for your workstation. Installation does not apply settings.
